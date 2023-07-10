@@ -1,0 +1,614 @@
+/* font */
+@font-face {
+    font-family: iranKharazmi;
+    src: url(../fonts/IRAN\ Kharazmi.woff) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: iranKharazmi;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/* دکمه اسکرول به بالا */
+
+#top {
+    position: fixed;
+    bottom: -60px;
+    right: 20px;
+    background-color: #8617a8;
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+#top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    right: 5px;
+    top: 15px;
+    transition: 0.3s ease;
+}
+
+#top:hover {
+    background-color: #b775d8;
+}
+
+#top i:hover {
+    top: 10px;
+}
+
+/* هدر */
+
+.custom-bg {
+    background-color: #A91079;
+}
+
+.logo {
+    width: 200px;
+    padding-top: 10px;
+    margin-right: 80px;
+}
+
+.toggler-color {
+    background-color: #bc81da75;
+}
+
+.nav-item {
+    padding-top: 6px;
+}
+
+.nav-link {
+    color: #F9F5F6;
+    display: inline-block;
+}
+
+.nav-link:focus {
+    color: #b5c9c9;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: #b5c9c9;
+    border-bottom: 2px solid #b5c9c9;
+}
+
+.btn-custom-1 {
+    background-color: #8617a8;
+    color: #F9F5F6;
+    padding: 8px 12px;
+}
+
+.btn-custom-1:hover {
+    background-color: #954cac;
+    color: #f3f2f2;
+}
+
+.btn-custom-2 {
+    background-color: #AA2EE6;
+    color: #F9F5F6;
+    padding: 8px 12px;
+}
+
+.btn-custom-2:hover {
+    background-color: #b775d8;
+    color: #e0dede;
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 0 0 12px 12px;
+}
+
+.dropdown-item:hover {
+    background-color: #A91079;
+    color: #f3f0f0;
+}
+
+/* بخش تصویر اصلی */
+
+.main-image {
+    position: relative;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-image .main-image-text {
+    background-color: #a91079ad;
+    position: absolute;
+    bottom: 120px;
+    right: 30%;
+    border-radius: 20px 0 20px 0;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+.main-image .main-image-text .text-title {
+    color: #F9F5F6;
+    font-size: 26px;
+}
+
+.main-image .main-image-text .text-paragraph {
+    font-size: 18px;
+    color: #F9F5F6;
+}
+
+
+/* بخش خدمات */
+
+.subject-text {
+    font-size: 36px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.subject-text {
+    border-bottom: 2px solid #000;
+}
+
+.image-box {
+    position: relative;
+    margin-top: 10px;
+}
+
+.image-box img {
+    width: 100%;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.image-box .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    background-color: #a91079;
+    width: 90%;
+    bottom: 5px;
+    right: 17px;
+    padding: 4px;
+    border-radius: 0 0 14px 14px;
+    opacity: .7;
+}
+
+.image-box .text-box .text-box-h {
+    text-align: center;
+    font-size: 28px;
+    margin: 10px 0 10px 0;
+    color: #ffffff;
+}
+
+.image-box .text-box .text-box-p {
+    display: none;
+    font-size: 14px;
+    text-align: center;
+    color: #F9F5F6;
+}
+
+.image-box:hover .text-box-p {
+    display: block;
+    transition: 2s p ease-in;
+}
+
+/* بخش درباره ما */
+
+.about-us {
+    margin-top: 50px;
+}
+
+.about-us .about-img img {
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+    transition: .6s all ease-in-out;
+    overflow: hidden;
+}
+
+.about-us .about-img img:hover {
+    transform: scale(.95);
+}
+
+.about-us .abou-text h4 {
+    font-size: 36px;
+    border-bottom: 2px solid #000;
+    padding: 10px;
+}
+
+.about-us .abou-text p {
+    font-size: 14px;
+    line-height: 2.5;
+}
+
+/* بخش آیکون ها */
+
+.box-icon {
+    background-color: #eeecec;
+    border-radius: 20px;
+}
+
+.box-icon h3 {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-bottom: 2px solid #000;
+}
+
+.box-icon-content {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 85px;
+    margin: 0 10px;
+    transition: .6s;
+}
+
+.box-icon-content:hover {
+    transform: translateY(-12px);
+    border-radius: 20px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
+    transition: 0.6s all ease-in;
+}
+
+.box-icon-img img {
+    width: 100px;
+    height: 100px;
+    padding: 6px;
+}
+
+.box-icon-img h4 {
+    text-align: center;
+}
+
+/* بخش تیم */
+
+.team-info-header {
+    font-size: 36px;
+    border-bottom: 2px solid #000;
+    margin: 50px 0;
+    padding: 20px 0;
+}
+
+.team-info {
+    border-radius: 12px;
+    padding: 15px;
+    position: relative;
+}
+
+.team-info img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.6);
+}
+
+.team-info .text-infos {
+    position: absolute;
+    bottom: 15px;
+    border-radius: 0 0 20px 20px;
+    background-color: #a91079;
+    width: 92%;
+    padding: 25px;
+    opacity: 0.8;
+}
+
+.team-info .text-infos h4 {
+    font-size: 26px;
+    color: #F9F5F6;
+}
+
+.team-info .text-infos p {
+    display: none;
+    font-size: 18px;
+    color: #F9F5F6;
+    line-height: 1;
+}
+
+.team-info:hover .text-infos p {
+    display: block;
+}
+
+/* بخش سوالات متداول */
+
+.question-header {
+    font-size: 36px;
+    margin: 50px 0;
+    padding: 20px 0;
+    border-bottom: 2px solid #000;
+}
+
+.accordion-button {
+    font-size: 20px;
+    padding: 20px;
+    background-color: #a91079;
+    color: #F9F5F6;
+}
+
+.accordion-button:focus {
+    background-color: #4b044de0;
+    border: none;
+    box-shadow: 0 0 0 0.25rem #4b044dc5;
+    color: #F9F5F6;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #e7e5e5;
+    background-color: #4b044dc5;
+}
+
+.accordion-body {
+    font-size: 15px;
+    padding: 20px;
+    background-color: #e7e5e5;
+}
+
+/* بخش فوتر */
+
+.footer-col h5 {
+    font-size: 20px;
+    color: #eee;
+    border-bottom: 3px solid #eee;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.footer-col h5:hover {
+    color: #b5c9c9;
+    border-bottom: 3px solid #b5c9c9;
+}
+
+.footer-col .nav-link {
+    color: #d4d4d4;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.footer-col .nav-link:hover {
+    color: #b5c9c9;
+    border: none;
+}
+
+.social-icon i {
+    font-size: 30px;
+    padding-right: 5px;
+}
+
+/* responsive */
+
+@media screen and (max-width:576px) {
+
+    /* هدر */
+    .logo {
+        width: 180px;
+        padding: 0;
+        margin-right: 0;
+    }
+
+    .btn-custom-1,
+    .btn-custom-2 {
+        width: 100%;
+        margin: 12px 0;
+    }
+
+    /* بخش تصویر اصلی */
+    .main-image img {
+        height: 60vh;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .main-image .main-image-text {
+        bottom: 55px;
+        right: 43px;
+        width: 80%;
+    }
+
+    .main-image .main-image-text .text-title {
+        font-size: 22px;
+    }
+
+    .main-image .main-image-text .text-paragraph {
+        font-size: 14px;
+    }
+
+    /* بخش خدمات */
+    .image-box .text-box {
+        width: 91%;
+    }
+
+    /* بخش آیکون ها */
+    .box-icon-content {
+        width: 260px;
+        height: 160px;
+    }
+
+    .box-icon-img img {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* بخش درباره ما */
+    .about-us .about-img img {
+        height: 60vh;
+    }
+
+    /* بخش سوالات متداول */
+    .accordion-button {
+        font-size: 16px;
+    }
+
+    /* بخش فوتر */
+    .footer-col h5 {
+        font-size: 16px;
+    }
+    .footer-col .nav-link {
+        font-size: 12px;
+    }
+    .social-icon {
+        justify-content: center;
+    }
+    .social-icon i {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    /* بخش هدر */
+    .btn-custom-1,
+    .btn-custom-2 {
+        width: 100%;
+        margin: 12px 0;
+    }
+
+    /* بخش تصویر اصلی */
+    .main-image img {
+        height: 85vh;
+    }
+
+    .main-image .main-image-text {
+        bottom: 55px;
+        right: 80px;
+        width: 80%;
+    }
+
+    .main-image .main-image-text .text-title {
+        font-size: 22px;
+    }
+
+    .main-image .main-image-text .text-paragraph {
+        font-size: 14px;
+    }
+
+    /* بخش خدمات */
+    .image-box .text-box {
+        width: 90.65%;
+    }
+
+    /* بخش تیم */
+    .team-info .text-infos {
+        width: 91%;
+    }
+
+    /* بخش سوالات متداول */
+    .accordion-button {
+        font-size: 18px;
+    }
+
+    /* بخش فوتر */
+    .footer-col h5 {
+        font-size: 16px;
+    }
+    .footer-col .nav-link {
+        font-size: 12px;
+    }
+    .social-icon i {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    /* بخش تصویر اصلی */
+    .main-image img {
+        height: 85vh;
+    }
+
+    .main-image .main-image-text {
+        bottom: 55px;
+        right: 80px;
+        width: 80%;
+    }
+
+    .main-image .main-image-text .text-title {
+        font-size: 22px;
+    }
+
+    .main-image .main-image-text .text-paragraph {
+        font-size: 14px;
+    }
+
+    /* بخش خدمات */
+    .image-box .text-box {
+        width: 86.65%;
+    }
+
+    /* بخش درباره ما */
+    .about-us .about-img img {
+        height: 100vh;
+    }
+
+    /* بخش تیم */
+    .team-info .text-infos {
+        width: 90%;
+    }
+
+    /* بخش سوالات متداول */
+    .accordion-button {
+        font-size: 18px;
+    }
+
+    /* بخش فوتر */
+    .social-icon i {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    /* بخش تصویر اصلی */
+    .main-image img {
+        height: 100vh;
+    }
+
+    .main-image .main-image-text {
+        bottom: 72px;
+        right: 30%;
+        width: 40%;
+    }
+
+    .main-image .main-image-text .text-title {
+        font-size: 22px;
+    }
+
+    .main-image .main-image-text .text-paragraph {
+        font-size: 14px;
+    }
+
+    /* بخش خدمات */
+    .image-box .text-box {
+        width: 90%;
+    }
+
+    /* بخش تیم */
+    .team-info .text-infos {
+        width: 93%;
+    }
+
+    /* بخش فوتر */
+    .footer-col h5 {
+        font-size: 22px;
+    }
+    .footer-col .nav-link {
+        font-size: 15px;
+    }
+    .social-icon i {
+        font-size: 30px;
+    }
+}

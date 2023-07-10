@@ -1,0 +1,78 @@
+/* بخش فرم رزرو */
+
+/* فرم ثبت رزرو */
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem #A91079;
+    border-color: #fff;
+}
+
+.form-select:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 0.25rem #A91079;
+}
+
+/* تقویم */
+
+.calendar-head-text {
+    padding: 20px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.main-head tr th {
+    padding: 3px;
+}
+
+.custom-size {
+    width: 90%;
+}
+
+.main-head tr th i {
+    cursor: pointer;
+}
+
+.main-head tr th:not(.custom-size):hover {
+    background-color: #A91079;
+    color: #eee;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 6px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+table th {
+    background: #eee;
+    font-weight: bold;
+}
+
+
+table td:nth-child(odd) {
+    background: #fff;
+}
+
+table td:nth-child(even) {
+    background: #f2f2f2;
+}
+
+table td:hover {
+    background-color: #A91079;
+    cursor: pointer;
+    color: #eee;
+}
+
+@media screen and (max-width:576px) {
+    th:not(.custom-size) {
+        font-size: 10px;
+    }
+}
